@@ -570,3 +570,75 @@ flex-direction: column;
     padding: 1rem 2rem;
   }
 }
+/* ======= RESPONSIVENESS FIXES (Mobile Only) ======= */
+@media (max-width: 768px) {
+
+  html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
+  /* HEADER FIX */
+  .header {
+    padding: 2rem 5%;
+  }
+
+  /* HOME SECTION FIX */
+  .home {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 5rem;
+    padding: 8rem 5%;
+  }
+
+  .home-content {
+    align-items: center;
+  }
+
+  .home-img img {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  /* ABOUT SECTION FIX */
+  .about {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 5rem;
+    padding: 8rem 5%;
+  }
+
+  .about img {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  /* PROJECTS SECTION FIX */
+  .projects-box {
+    grid-template-columns: 1fr;
+    padding: 0 5%;
+  }
+
+  /* CONTACT SECTION FIX */
+  .contact form {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 5%;
+  }
+
+  /* FOOTER FIX */
+  .footer {
+    padding: 4rem 5%;
+  }
+
+  /* Font scaling for small screens */
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+}
