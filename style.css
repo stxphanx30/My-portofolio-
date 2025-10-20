@@ -11,7 +11,7 @@
   --bg-color: #080808;
   --second-bg-color: #101010;
   --text-color: white;
-  --main-color: #ea580c;
+  --main-color: #3b82f6;
 }
 
 html {
@@ -57,7 +57,7 @@ body {
 }
 
 span {
-  background: linear-gradient(270deg, #df8908 10%, #ff1d15 100%);
+ background: linear-gradient(270deg, #1d4ed8 10%, #3b82f6 100%);
   background-clip: text;
   color: transparent;
 }
@@ -80,7 +80,7 @@ span {
   font-size: 1.8rem;
   padding: 1rem 2rem;
   border-radius: 3rem;
-  background: linear-gradient(270deg, #df8908 10%, #ff1d15 100%);
+ background: linear-gradient(270deg, #1d4ed8 10%, #3b82f6 100%);
   letter-spacing: 1px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
@@ -344,7 +344,7 @@ color:black;
   margin-top: 1rem;  /* optional: space from the button or content above */
   display: block;    /* ensures it behaves as a block element */
   text-align: center; /* center align text */
-    background: linear-gradient(270deg, #df8908 10%, #ff1d15 100%);
+   background: linear-gradient(270deg, #1d4ed8 10%, #3b82f6 100%);
   background-clip: text;
   color: transparent;
 }
@@ -381,6 +381,7 @@ color:black;
   background-color: var(--bg-color);
   padding: 50px 0;
 }
+
 .footer .social-icons{
   text-align: center;
 }
@@ -392,6 +393,49 @@ color:black;
   display: inline-block;
   margin-left: 20px;
 }
+/* --- Education Dots (no default bullets) --- */
+.education-list {
+  list-style-type: none !important; /* enlève les points noirs */
+  margin: 0;
+  padding: 0;
+}
+
+.education-list li {
+  position: relative;
+  margin-bottom: 18px;
+  padding-left: 28px;
+  line-height: 1.6;
+}
+
+.education-list li .edu-dot {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+ background: linear-gradient(270deg, #1d4ed8 10%, #3b82f6 100%);
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.6);
+}
+
+.project-card {
+    position: relative; /* make the badge position relative to the card */
+}
+
+.project-card .badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #f63b3b; /* blue that matches your theme */
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.6);
+    z-index: 10;
+}
+
 .footer ul li a{
   color: white;
   border-bottom: 3px solid transparent;
