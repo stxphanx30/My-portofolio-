@@ -436,6 +436,7 @@ color:black;
     z-index: 10;
 }
 
+
 .footer ul li a{
   color: white;
   border-bottom: 3px solid transparent;
@@ -685,4 +686,63 @@ flex-direction: column;
   html {
     font-size: 50%;
   }
+}
+.education-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-top: 3rem;
+  justify-content: space-between;
+}
+
+.edu-card {
+  background-color: var(--second-bg-color);
+  border: 2px solid var(--main-color);
+  border-radius: 2rem;
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  flex: 1 1 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.edu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px var(--main-color);
+}
+
+.edu-logo img {
+  width: 80px; /* logo plus visible */
+  height: 80px;
+  object-fit: contain;
+}
+
+.edu-content h4 {
+  color: var(--main-color);
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.edu-date {
+  font-size: 1.4rem;
+  color: var(--main-color);
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.edu-content p {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.languages-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+.languages-list li {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
 }
